@@ -59,6 +59,21 @@
     .publication-item a {
       color: #2563eb;
     }
+
+
+  .profile-image {
+    border-radius: 50%;           /* makes it circular */
+    border: 4px solid #2563eb;    /* blue border (same as your accent color) */
+    object-fit: cover;            /* ensures it crops nicely */
+    width: 128px;
+    height: 128px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+   }
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
   </style>
 </head>
 
@@ -68,6 +83,12 @@
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container has-text-centered is-max-desktop">
+
+      <!-- Profile Image -->
+      <figure class="image is-128x128 is-inline-block mb-4">
+        <img src="static/images/profile.jpg" alt="Oded M" class="profile-image">
+      </figure>
+
       <h1 class="title is-1">Oded M</h1>
       <h2 class="subtitle is-4">AI Researcher & Machine Learning Engineer</h2>
 
